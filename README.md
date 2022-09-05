@@ -10,13 +10,13 @@
 
 * Must have
 
-search engine
+  search engine
 
-buttons met talen erop
+  buttons met talen erop
 
 * Should have
 
-checkboxes met site's
+  checkboxes met site's
 
 * Could have
 
