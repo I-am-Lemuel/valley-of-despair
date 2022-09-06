@@ -11,57 +11,55 @@ export default function Footer() {
       <h1 style={{ color: "green", 
                    textAlign: "center", 
                    marginTop: "-50px" }}>
-        GeeksforGeeks: A Computer Science Portal for Geeks
+        Valley of Despair: Made by Personal Home Pain.
       </h1>
       <StyledContainer>
         <StyledRow>
           <StyledColumn>
-            <StyledHeading>About Us</StyledHeading>
-            <StyledFooterLink href="#">Aim</StyledFooterLink>
-            <StyledFooterLink href="#">Vision</StyledFooterLink>
-            <StyledFooterLink href="#">Testimonials</StyledFooterLink>
+            <StyledHeading>github profiles:</StyledHeading>
+            <StyledFooterLink href="https://github.com/Skullsko">Niek Goedemans</StyledFooterLink>
+            <StyledFooterLink href="https://github.com/I-am-Lemuel">Lemuel Bakker</StyledFooterLink>
+            <StyledFooterLink href="https://github.com/brentgotte">Brent Götte</StyledFooterLink>
+            <StyledFooterLink href="https://github.com/Xaohs">Julian Roeland</StyledFooterLink>
+            <StyledFooterLink href="https://github.com/163021">Casper Kizewski</StyledFooterLink>
           </StyledColumn>
           <StyledColumn>
-            <StyledHeading>Services</StyledHeading>
-            <StyledFooterLink href="#">Writing</StyledFooterLink>
-            <StyledFooterLink href="#">Internships</StyledFooterLink>
-            <StyledFooterLink href="#">Coding</StyledFooterLink>
-            <StyledFooterLink href="#">Teaching</StyledFooterLink>
+            <StyledHeading>Location</StyledHeading>
+            <StyledFooterLink href="#">Our headquarter</StyledFooterLink>
           </StyledColumn>
           <StyledColumn>
             <StyledHeading>Contact Us</StyledHeading>
-            <StyledFooterLink href="#">Uttar Pradesh</StyledFooterLink>
-            <StyledFooterLink href="#">Ahemdabad</StyledFooterLink>
-            <StyledFooterLink href="#">Indore</StyledFooterLink>
-            <StyledFooterLink href="#">Mumbai</StyledFooterLink>
+            <StyledFooterLink href="#">Email</StyledFooterLink>
+            <StyledFooterLink href="#">LinkedIn</StyledFooterLink>
+            <StyledFooterLink href="#">Github repository</StyledFooterLink>
           </StyledColumn>
           <StyledColumn>
-            <StyledHeading>Social Media</StyledHeading>
+            <StyledHeading></StyledHeading>
             <StyledFooterLink href="#">
               <i className="fab fa-facebook-f">
                 <span style={{ marginLeft: "10px" }}>
-                  Facebook
+                  
                 </span>
               </i>
             </StyledFooterLink>
             <StyledFooterLink href="#">
               <i className="fab fa-instagram">
                 <span style={{ marginLeft: "10px" }}>
-                  Instagram
+                  
                 </span>
               </i>
             </StyledFooterLink>
             <StyledFooterLink href="#">
               <i className="fab fa-twitter">
                 <span style={{ marginLeft: "10px" }}>
-                  Twitter
+                  
                 </span>
               </i>
             </StyledFooterLink>
             <StyledFooterLink href="#">
               <i className="fab fa-youtube">
                 <span style={{ marginLeft: "10px" }}>
-                  Youtube
+                  
                 </span>
               </i>
             </StyledFooterLink>
