@@ -5,6 +5,7 @@ export const StyledLanguageBlocks = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: -15px;
+	margin-top: 130px;
 	width: 60%;
 	flex-direction: row;
 `;
