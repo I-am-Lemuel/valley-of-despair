@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const StyledSearch = styled.div`
 	button {
-		width: 60px;
-		height: 60px;
+		width: 54px;
+		height: 48px;
 		padding: 10px;
 		background: #2196f3;
 		color: white;
@@ -13,7 +13,14 @@ export const StyledSearch = styled.div`
 		cursor: pointer;
 	}
 
+	input {
+		padding-right: 20px;
+		margin-right: 25px;
+		border: 1px solid grey;	
+	}
+
 	button:hover {
 		background: #0b7dda;
 	}
+
 `;
