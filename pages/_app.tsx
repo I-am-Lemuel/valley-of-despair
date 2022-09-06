@@ -26,7 +26,7 @@ const Theme = ({ children }: any) => {
 			secondary: '#D8735A',
 			accent: '#6E2594',
 			accent2: '#416440',
-			background: '#FFBCF3',
+			background: '#FFEBFB',
 		},
 		fonts: {
 			primary: 'Merriweather, serif',
