@@ -1,24 +1,24 @@
-import {
-    StyledHeader,
-} from "./StyledHeader";
-// import storeLogo from '../../../public/images/store_logo.png'
-import Link from 'next/link';
 import Image from 'next/image';
-import React, { useContext, useEffect, useRef, useState } from "react";
-import {FunctionComponent} from "react";
+import Link from 'next/link';
+import { FunctionComponent } from 'react';
+import { StyledHeader, StyledLogo } from './StyledHeader';
 
-interface Props {
-}
+interface Props {}
 
 const Header: FunctionComponent<Props> = (props: any) => {
-
-    return (
-
-        <StyledHeader>
-
-           
-        </StyledHeader>
-
-    )
-}
+	return (
+		<StyledHeader>
+			<StyledLogo>
+				<Link href='/'>
+					<a>
+						<Image src='/logo.svg' alt='Logo' width={300} height={130} />
+					</a>
+				</Link>
+				<div>
+					<h1>Valley of Despair</h1>
+				</div>
+			</StyledLogo>
+		</StyledHeader>
+	);
+};
 export default Header;
