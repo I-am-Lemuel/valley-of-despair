@@ -1,26 +1,59 @@
 import styled from 'styled-components';
 
-export const footerHeight = '80px';
-
-export const StyledFooter = styled.footer`
-	display: flex;
-	position: relative;
+export const footerHeight = '300px';
+export const StyledFooter = styled.div`
+	padding: 80px 60px;
+	background: black;
 	bottom: 0;
-	height: ${footerHeight};
 	width: 100%;
-	text-align: left;
-	z-index: 1;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	-webkit-box-shadow: 0 0 8px 0 black;
-	-moz-box-shadow: 0 0 8px 0 black;
-	box-shadow: 0 0 8px 0 black;
+	max-height: ${footerHeight};
 
-	p {
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		width: 60%;
+	@media (max-width: 1000px) {
+		padding: 70px 30px;
 	}
+`;
+
+export const StyledContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 1000px;
+	margin: 0 auto;
+	/* background: red; */
+`;
+
+export const StyledColumn = styled.div`
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin-left: 60px;
+`;
+
+export const StyledRow = styled.div`
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+	grid-gap: 20px;
+
+	@media (max-width: 1000px) {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
+`;
+
+export const StyledFooterLink = styled.a`
+	color: #fff;
+	margin-bottom: 20px;
+	font-size: 18px;
+	text-decoration: none;
+
+	&:hover {
+		color: green;
+		transition: 200ms ease-in;
+	}
+`;
+
+export const StyledHeading = styled.p`
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 40px;
+	font-weight: bold;
 `;
