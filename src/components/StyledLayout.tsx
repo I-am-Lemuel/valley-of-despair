@@ -5,8 +5,8 @@ const StyledLayout = styled.div`
 	font-family: 'Roboto', sans-serif;
 	min-height: 100vh;
 	width: 100%;
-	background-color: white;
-	color: black;
+	background-color: ${(props) => props.theme.colors.background};
+	color: ${(props) => props.theme.colors.primary};
 
 	a {
 		text-decoration: none;
@@ -19,16 +19,6 @@ const StyledLayout = styled.div`
 export const StyledContent = styled.div`
 	min-height: calc(105vh - ${footerHeight});
 	margin-left: 10px;
-
-	> a > button {
-		width: 80px;
-		height: 60px;
-		word-wrap: normal;
-		margin: 10px auto;
-		background: white;
-		color: white;
-		border: none;
-	}
 
 	@media only screen and (max-width: 768px) {
 		margin-left: 0;

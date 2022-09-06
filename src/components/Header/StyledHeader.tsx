@@ -24,17 +24,10 @@ export const StyledHeader = styled.header`
 	}
 `;
 
-export const StyledLogo = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-`;
-
 export const StyledText = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex: 0.76;
+	width: 100%;
 	font-style: italic;
-	
 `;

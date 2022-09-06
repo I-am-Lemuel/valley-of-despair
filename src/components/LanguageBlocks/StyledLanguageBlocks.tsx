@@ -17,7 +17,7 @@ export const StyledCard = styled.div`
 	margin: 10px;
 	flex-wrap: wrap;
 	display: flex;
-	background-color: #f5f5f5;
+	background-color: transparent;
 	transition: all 0.3s ease-in-out;
 	padding: 15px;
 	text-align: center;
@@ -25,7 +25,7 @@ export const StyledCard = styled.div`
 	margin-top: 35px;
 	:hover {
 		padding: 20px;
-		background-color: lightblue;
+		background-color: ${(props) => props.theme.colors.secondary};
 		border-radius: 0;
 		transition: all 0.3s ease-in-out;
 		box-shadow: 5px 12px 15px 1px #888888;
