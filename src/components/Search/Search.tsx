@@ -17,7 +17,8 @@ export const Search: FunctionComponent<IProps> = (props) => {
 	};
 	return (
 		<StyledSearch>
-			<input
+			<div className='selection'>
+			<input type="text" placeholder='Search'
 				onChange={(e) => onChange(e)}
 				onKeyDown={(e) => {
 					if (e.key === 'Enter') {
@@ -28,6 +29,7 @@ export const Search: FunctionComponent<IProps> = (props) => {
 			<button onClick={(e) => onSearch(e)}>
 				<BsSearch />
 			</button>
+			</div>
 		</StyledSearch>
 	);
 };
