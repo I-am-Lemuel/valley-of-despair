@@ -29,6 +29,10 @@ const Home = () => {
 			image: 'php.png',
 			link: 'php',
 		},
+		{
+			image: 'mysql.png',
+			link: 'mysql',
+		},
 	];
 
 	return (

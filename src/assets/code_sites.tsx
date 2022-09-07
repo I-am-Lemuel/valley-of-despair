@@ -172,4 +172,25 @@ export const code_sites: {
 			},
 		],
 	},
+	{
+		key: 'mysql',
+		sites: [
+			{
+				image: 'mysql.png',
+				site: 'https://dev.mysql.com',
+			},
+			{
+				image: 'reddit.png',
+				site: 'https://reddit.com',
+			},
+			{
+				image: 'github.png',
+				site: 'https://github.com',
+			},
+			{
+				image: 'quora.png',
+				site: 'https://quora.com',
+			},
+		],
+	},
 ];
