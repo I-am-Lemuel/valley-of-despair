@@ -29,7 +29,7 @@ export default function Footer() {
           </StyledColumn>
           <StyledColumn>
             <StyledHeading>Contact Us</StyledHeading>
-            <StyledFooterLink href="#">Email</StyledFooterLink>
+            <StyledFooterLink href="mailto:lembak03@hotmail.com?subject=Feedback">Email</StyledFooterLink>
             <StyledFooterLink href="#">LinkedIn</StyledFooterLink>
             <StyledFooterLink href="https://github.com/I-am-Lemuel/valley-of-despair">Github repository</StyledFooterLink>
           </StyledColumn>
