@@ -1,8 +1,5 @@
 <h1 align="center">Welcome to valley-of-despair 👋</h1>
 <div align="left" style="display:flex; flex-direction:row;">
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
-</p>
 <img src="https://img.shields.io/static/v1?label=Pre-Alpha&message=v0.0.1&color=blueviolet" alt="prealpha">
 </div>
 <br>
