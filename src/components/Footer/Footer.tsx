@@ -8,7 +8,7 @@ import { StyledFooter,
 export default function Footer() {
     return (
             <StyledFooter>
-      <h1 style={{ color: "green", 
+      <h1 style={{ color: "white", 
                    textAlign: "center", 
                    marginTop: "-50px" }}>
         Valley of Despair: Made by Personal Home Pain.
