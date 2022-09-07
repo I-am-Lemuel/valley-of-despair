@@ -17,7 +17,7 @@ export const Search: FunctionComponent<IProps> = (props) => {
 	};
 	return (
 		<StyledSearch>
-			<div className='selection'>
+			<div>
 			<input type="text" placeholder='Search'
 				onChange={(e) => onChange(e)}
 				onKeyDown={(e) => {
