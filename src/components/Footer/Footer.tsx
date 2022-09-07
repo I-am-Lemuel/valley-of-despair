@@ -16,7 +16,7 @@ export default function Footer() {
       <StyledContainer>
         <StyledRow>
           <StyledColumn>
-            <StyledHeading>github profiles:</StyledHeading>
+            <StyledHeading>Github profiles:</StyledHeading>
             <StyledFooterLink href="https://github.com/Skullsko">Niek Goedemans</StyledFooterLink>
             <StyledFooterLink href="https://github.com/I-am-Lemuel">Lemuel Bakker</StyledFooterLink>
             <StyledFooterLink href="https://github.com/brentgotte">Brent Götte</StyledFooterLink>
@@ -31,7 +31,7 @@ export default function Footer() {
             <StyledHeading>Contact Us</StyledHeading>
             <StyledFooterLink href="#">Email</StyledFooterLink>
             <StyledFooterLink href="#">LinkedIn</StyledFooterLink>
-            <StyledFooterLink href="#">Github repository</StyledFooterLink>
+            <StyledFooterLink href="https://github.com/I-am-Lemuel/valley-of-despair">Github repository</StyledFooterLink>
           </StyledColumn>
           <StyledColumn>
             <StyledHeading></StyledHeading>
