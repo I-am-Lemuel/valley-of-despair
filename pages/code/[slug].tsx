@@ -1,7 +1,6 @@
 import { NextPage } from 'next';
 import Layout from '../../src/components/Layout';
 import { Search } from '../../src/components/Search/Search';
-
 interface Props {
 	slug: string;
 	default_sites: { key: string; sites: { image: string; site: string }[] }[];
@@ -15,16 +14,6 @@ const CodePage: NextPage<Props> = (props) => {
 			<Search placeholder={`Search in ${slug}`} site_params={site_params} />
 			<h1>Slug: {slug}</h1>
 			<h1>Key params: {site_params}</h1>
-			{default_sites.map((site, index) => {
-				if (site.key === slug) {
-					return (
-						<div key={index}>
-							<h1>Key: {site.key}</h1>
-							<h1>Sites: </h1>
-						</div>
-					);
-				}
-			})}
 		</Layout>
 	);
 };
