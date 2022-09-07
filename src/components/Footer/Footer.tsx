@@ -25,13 +25,13 @@ export default function Footer() {
           </StyledColumn>
           <StyledColumn>
             <StyledHeading>Location</StyledHeading>
-            <StyledFooterLink href="#">Our headquarter</StyledFooterLink>
+            <StyledFooterLink href="https://maps.app.goo.gl/pK46MLTE14155Yy77">Our headquarter</StyledFooterLink>
           </StyledColumn>
           <StyledColumn>
             <StyledHeading>Contact Us</StyledHeading>
             <StyledFooterLink href="#">Email</StyledFooterLink>
             <StyledFooterLink href="#">LinkedIn</StyledFooterLink>
-            <StyledFooterLink href="#">Github repository</StyledFooterLink>
+            <StyledFooterLink href="https://github.com/I-am-Lemuel/valley-of-despair">Github repository</StyledFooterLink>
           </StyledColumn>
           <StyledColumn>
             <StyledHeading></StyledHeading>
