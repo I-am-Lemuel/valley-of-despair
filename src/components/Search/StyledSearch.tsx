@@ -16,7 +16,6 @@ export const StyledSearch = styled.div`
 		border-radius: 0px;
 		cursor: pointer;
 		border: unset;
-		border-bottom: 1px solid ${(props) => props.theme.colors.primary};
 	}
 	div {
 		display: flex;
