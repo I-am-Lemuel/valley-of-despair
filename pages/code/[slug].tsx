@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { code_sites } from '../../src/assets/code_sites';
 import Layout from '../../src/components/Layout';
 import { Search } from '../../src/components/Search/Search';
@@ -10,16 +10,13 @@ interface Props {
 }
 const CodePage: NextPage<Props> = (props) => {
 	const { slug, stringified_sites } = props;
-	const all_sites: { image: string; site: string }[] = JSON.parse(stringified_sites);
+	const all_sites: { image: string; site: string; title: string }[] =
+		JSON.parse(stringified_sites);
 	const site_params = `\"${slug}\"`;
 
 	const [selectedSites, setSelectedSites] = useState<{ selected_sites: string[] }>({
 		selected_sites: ['https://stackoverflow.com'],
 	});
-
-	useEffect(() => {
-		console.log(selectedSites);
-	}, [selectedSites]);
 	return (
 		<Layout title={`PHP - ${slug}`}>
 			<Search
