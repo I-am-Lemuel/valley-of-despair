@@ -1,5 +1,4 @@
 import { NextPage } from 'next';
-import Image from 'next/future/image';
 import { useEffect, useState } from 'react';
 import { code_sites } from '../../src/assets/code_sites';
 import Layout from '../../src/components/Layout';
@@ -23,7 +22,11 @@ const CodePage: NextPage<Props> = (props) => {
 	}, [selectedSites]);
 	return (
 		<Layout title={`PHP - ${slug}`}>
-			<Search placeholder={`Search in ${slug}`} site_params={site_params} />
+			<Search
+				placeholder={`Search in ${slug}`}
+				key_params={site_params}
+				selectedSites={selectedSites}
+			/>
 			<SiteBlocks
 				all_sites={all_sites}
 				selectedSites={selectedSites}
