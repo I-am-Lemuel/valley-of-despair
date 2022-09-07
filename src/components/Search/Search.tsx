@@ -6,10 +6,11 @@ import { BsSearch } from 'react-icons/bs';
 import { StyledLogo, StyledSearch } from './StyledSearch';
 interface IProps {
 	placeholder?: string;
-	site_params?: string;
+	key_params?: string;
+	selectedSites?: { selected_sites: string[] };
 }
 export const Search: FunctionComponent<IProps> = (props) => {
-	const { placeholder, site_params } = props;
+	const { placeholder, key_params, selectedSites } = props;
 	const [search, setSearch] = useState('');
 	const router = useRouter();
 
@@ -18,9 +19,11 @@ export const Search: FunctionComponent<IProps> = (props) => {
 	};
 	const onSearch = (e: any) => {
 		e.preventDefault();
-		router.push(
-			`https://www.google.com/search?q=${search} ${site_params ? site_params : ''}`,
-		);
+		const query =
+			search +
+			(key_params ? ` ${key_params}` : '') +
+			(selectedSites ? ` [site: ${selectedSites.selected_sites.join(', ')}]` : '');
+		router.push(`https://www.google.com/search?q=${query}`);
 	};
 	return (
 		<StyledSearch>

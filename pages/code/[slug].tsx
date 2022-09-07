@@ -33,7 +33,11 @@ const CodePage: NextPage<Props> = (props) => {
 	}, [selectedSites]);
 	return (
 		<Layout title={`PHP - ${slug}`}>
-			<Search placeholder={`Search in ${slug}`} site_params={site_params} />
+			<Search
+				placeholder={`Search in ${slug}`}
+				key_params={site_params}
+				selectedSites={selectedSites}
+			/>
 			<h1>Slug: {slug}</h1>
 			<h1>Key params: {site_params}</h1>
 			{all_sites.map((site, index) => (
