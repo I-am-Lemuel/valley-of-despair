@@ -2,46 +2,25 @@ import Image from 'next/future/image';
 import Link from 'next/link';
 import { FunctionComponent } from 'react';
 import { StyledCard, StyledLanguageBlocks } from './StyledLanguageBlocks';
-interface IProps {}
+interface IProps {
+	cards: { image: string; link: string }[];
+}
 export const LanguageBlocks: FunctionComponent<IProps> = (props) => {
-	const cards = [
-		{
-			icon: 'css.png',
-			name: 'css',
-		},
-		{
-			icon: 'html.png',
-			name: 'html',
-		},
-		{
-			icon: 'js.png',
-			name: 'js',
-		},
-		{
-			icon: 'python.png',
-			name: 'python',
-		},
-		{
-			icon: 'c.png',
-			name: 'c',
-		},
-		{
-			icon: 'php.png',
-			name: 'php',
-		},
-	];
+	const { cards } = props;
 	return (
 		<StyledLanguageBlocks>
-			{cards.map((card) => {
+			{cards.map((card, key) => {
 				return (
-					<StyledCard>
-						<Link href={`/code/${card.name}`}>
-							<Image
-								src={`/${card.icon}`}
-								alt={card.name}
-								width={100}
-								height={100}
-							/>
+					<StyledCard key={key}>
+						<Link href={`/code/${card.link}`} passHref>
+							<a>
+								<Image
+									src={`/${card.image}`}
+									alt={card.link}
+									width={100}
+									height={100}
+								/>
+							</a>
 						</Link>
 					</StyledCard>
 				);

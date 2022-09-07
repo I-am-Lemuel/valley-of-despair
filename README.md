@@ -1,23 +1,30 @@
-# TEAM PHP (PersonalHomePain)
+<h1 align="center">Welcome to valley-of-despair 👋</h1>
+<div align="left" style="display:flex; flex-direction:row;">
+<img src="https://img.shields.io/static/v1?label=Pre-Alpha&message=v0.0.1&color=blueviolet" alt="prealpha">
+</div>
+<br>
+> Valley of Dispair is een handige startpage om jouw programmeer ervaring beter te maken!
 
-## Project Naam: Valley Of Dispair
-### Valley of Dispair is een handige startpage om jouw programmeer ervaring beter te maken!
+## Install
+
+```sh
+git clone https://github.com/I-am-Lemuel/valley-of-despair.git
+npm install
+```
+
+## Usage
+
+```sh
+npm run dev
+```
+
+## Author's
+
+👤 **Lemuel, Julian, Casper, Niek, Brent.**
 
 
+## Show your support
 
-# Het Probleem & Oplossing:
-### Toen wij begonnen met programmeren wisten wij natuurlijk nog niks, waardoor er minder relevante searches naar boven kwamen. Daar hebben wij hebben daar de oplossing voor: Valley Of Dispair. VOD is een handige startpagina voor beginnende programmeurs met goede websites voor oplossingen/antwoord aangeraden door de beste studenten van de Bit-Academy. De website bestaat uit een dashboard waar je kan kiezen uit meerdere talen waaronder: PHP, HTML/CSS, JavaScript en Python. Als je klikt op 1 van de talen krijg je een lijst vol met verschillende websites die goedgekeurd en welbekend zijn bij ervaren programmeurs.
+Give a ⭐️ if this project helped you!
 
-* Must have
-
-  search engine
-
-  buttons met talen erop
-
-* Should have
-
-  checkboxes met site's
-
-* Could have
-
-* Won't have (this time)
+***

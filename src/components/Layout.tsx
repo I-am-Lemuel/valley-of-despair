@@ -5,13 +5,13 @@ import StyledLayout, { StyledContent } from './StyledLayout';
 
 interface LayoutProps {
 	children: React.ReactNode;
-	title?: string;
+	title: string;
 }
 
 const Layout = ({ title, children }: LayoutProps) => {
 	return (
 		<StyledLayout>
-			<title>{title ? `${title} - Bit Academy` : `Bit Academy`}</title>
+			<title>{title}</title>
 			<Header />
 			<StyledContent>{children}</StyledContent>
 			<Footer />

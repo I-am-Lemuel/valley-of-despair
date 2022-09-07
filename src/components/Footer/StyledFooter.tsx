@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const footerHeight = '300px';
 export const StyledFooter = styled.div`
 	padding: 80px 0 80px 0;
-	background: black;
+	background: #212121;
 	bottom: 0;
 	width: 100%;
 	max-height: ${footerHeight};
@@ -46,7 +46,7 @@ export const StyledFooterLink = styled.a`
 	text-decoration: none;
 
 	&:hover {
-		color: green;
+		color: #D8735A;
 		transition: 200ms ease-in;
 	}
 `;
