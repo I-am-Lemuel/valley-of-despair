@@ -26,7 +26,7 @@ export const StyledSearch = styled.div`
 	input {
 		font-size: 20px;
 		padding-left: 12px;
-		height: 40px;
+		/* height: 40px; */
 		width: 500px;
 		padding-right: 20px;
 		border: 2px solid #2196f3;
@@ -44,7 +44,9 @@ export const StyledSearch = styled.div`
 		outline: none;
 	}
 	button:hover {
-		color: #9e9e9e;
+		transition: all 0.5s;
+		box-shadow: 0px 0px 4px 1px #2196f3;
+		outline: none;
 	}
 `;
 

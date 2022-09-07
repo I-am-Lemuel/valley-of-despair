@@ -23,11 +23,9 @@ export const Search: FunctionComponent<IProps> = (props) => {
 	return (
 		<StyledSearch>
 			<StyledLogo>
-				<Link href='/'>
-					<a>
+					<a href='/'>
 						<Image src='/logo.svg' alt='Logo' width={300} height={130} />
 					</a>
-				</Link>
 			</StyledLogo>
 			<div>
 				<button onClick={(e) => onSearch(e)}>

@@ -16,12 +16,12 @@ export default function Footer() {
       <StyledContainer>
         <StyledRow>
           <StyledColumn>
-            <StyledHeading>github profiles:</StyledHeading>
+            <StyledHeading>Github profiles:</StyledHeading>
             <StyledFooterLink href="https://github.com/Skullsko">Niek Goedemans</StyledFooterLink>
             <StyledFooterLink href="https://github.com/I-am-Lemuel">Lemuel Bakker</StyledFooterLink>
             <StyledFooterLink href="https://github.com/brentgotte">Brent Götte</StyledFooterLink>
             <StyledFooterLink href="https://github.com/Xaohs">Julian Roeland</StyledFooterLink>
-            <StyledFooterLink href="https://github.com/163021">Casper Kizewski</StyledFooterLink>
+            <StyledFooterLink href="https://github.com/Ssionn">Casper Kizewski</StyledFooterLink>
           </StyledColumn>
           <StyledColumn>
             <StyledHeading>Location</StyledHeading>
