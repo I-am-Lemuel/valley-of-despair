@@ -25,7 +25,7 @@ export default function Footer() {
           </StyledColumn>
           <StyledColumn>
             <StyledHeading>Location</StyledHeading>
-            <StyledFooterLink href="#">Our headquarter</StyledFooterLink>
+            <StyledFooterLink href="https://maps.app.goo.gl/pK46MLTE14155Yy77">Our headquarter</StyledFooterLink>
           </StyledColumn>
           <StyledColumn>
             <StyledHeading>Contact Us</StyledHeading>
