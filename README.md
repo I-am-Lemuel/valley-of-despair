@@ -8,6 +8,7 @@
 ## Install
 
 ```sh
+git clone https://github.com/I-am-Lemuel/valley-of-despair.git
 npm install
 ```
 
@@ -17,7 +18,7 @@ npm install
 npm run dev
 ```
 
-## Author
+## Author's
 
 👤 **Lemuel, Julian, Casper, Niek, Brent.**
 
@@ -27,4 +28,3 @@ npm run dev
 Give a ⭐️ if this project helped you!
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
