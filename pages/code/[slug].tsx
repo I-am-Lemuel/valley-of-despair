@@ -31,7 +31,7 @@ const CodePage: NextPage<Props> = (props) => {
 
 export async function getServerSideProps(context: any) {
 	const { slug } = context.params;
-	let default_sites: { key: string; sites: { image: string; site: string }[] }[] = [
+	const default_sites: { key: string; sites: { image: string; site: string }[] }[] = [
 		{
 			key: 'css',
 			sites: [
@@ -71,7 +71,12 @@ export async function getServerSideProps(context: any) {
 		},
 		{
 			key: 'js',
-			sites: {},
+			sites: [
+				{
+					image: '',
+					site: '',
+				},
+			],
 		},
 	];
 
