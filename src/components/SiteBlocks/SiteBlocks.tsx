@@ -1,9 +1,8 @@
 import Image from 'next/future/image';
-import Link from 'next/link';
 import { Dispatch, FunctionComponent, SetStateAction } from 'react';
 import { StyledSiteBlocks, StyledSiteBtn } from './StyledSiteBlocks';
 interface IProps {
-	all_sites: { image: string; site: string }[];
+	all_sites: { image: string; site: string; title: string }[];
 	selectedSites: { selected_sites: string[] };
 	setSelectedSites: Dispatch<SetStateAction<{ selected_sites: string[] }>>;
 }
@@ -22,16 +21,20 @@ export const SiteBlocks: FunctionComponent<IProps> = (props) => {
 	};
 	return (
 		<StyledSiteBlocks>
-						{all_sites.map((site, index) => (
-							<StyledSiteBtn onClick={(e) => handleClickSite(e, site.site)} key={index} selected={
-								selectedSites.selected_sites.includes(site.site)
-							}>
-									<Image src={`/${site.image}`} alt={site.site} width={100} height={100} />
-									<div>
-										<p>fa waka</p>
-										</div>
-							</StyledSiteBtn>
-))}
+			{all_sites.map((site, index) => (
+				<StyledSiteBtn
+					onClick={(e) => handleClickSite(e, site.site)}
+					key={index}
+					selected={selectedSites.selected_sites.includes(site.site)}>
+					<p>{site.title}</p>
+					<Image
+						src={`/${site.image}`}
+						alt={site.site}
+						width={100}
+						height={100}
+					/>
+				</StyledSiteBtn>
+			))}
 		</StyledSiteBlocks>
 	);
 };

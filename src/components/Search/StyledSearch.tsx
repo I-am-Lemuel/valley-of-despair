@@ -6,6 +6,7 @@ export const StyledSearch = styled.div`
 	width: 100%;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 150px;
 
 	button {
 		width: 40px;

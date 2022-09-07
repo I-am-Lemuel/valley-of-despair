@@ -1,4 +1,7 @@
-export const code_sites: { key: string; sites: { image: string; site: string }[] }[] = [
+export const code_sites: {
+	key: string;
+	sites: { image: string; site: string; title: string }[];
+}[] = [
 	{
 		key: 'css',
 		sites: [

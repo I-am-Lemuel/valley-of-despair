@@ -5,16 +5,16 @@ interface Props {
 }
 
 export const StyledHeader = styled.header`
-	height: 150px;
+	height: 5px;
 	padding: 10px;
 	display: flex;
 	flex-direction: row;
 
 	margin-bottom: 90px;
 
-	-webkit-box-shadow: 0 0 8px 0 black;
-	-moz-box-shadow: 0 0 8px 0 black;
-	box-shadow: 0 0 8px 0 black;
+	-webkit-box-shadow: 0 0 4px 0 black;
+	-moz-box-shadow: 0 0 4px 0 black;
+	box-shadow: 0 0 4px 0 black;
 
 	@media only screen and (max-width: 728px) {
 		height: 130px;
@@ -27,7 +27,7 @@ export const StyledHeader = styled.header`
 export const StyledText = styled.div`
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	width: 100%;
 	font-style: italic;
+	margin-left: 10px;
 `;

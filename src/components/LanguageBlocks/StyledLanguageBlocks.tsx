@@ -8,6 +8,9 @@ export const StyledLanguageBlocks = styled.div`
 	margin-top: 130px;
 	width: 60%;
 	flex-direction: row;
+	display: flex;
+	align-items: center;
+	width: 100%;
 `;
 export const StyledCard = styled.div`
 	cursor: pointer;
