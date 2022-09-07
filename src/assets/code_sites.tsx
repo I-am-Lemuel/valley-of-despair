@@ -49,7 +49,7 @@ export const default_sites: { key: string; sites: { image: string; site: string 
 					site: 'https://w3schools.com',
 				},
 				{
-					image: 'stack.png',
+					image: 'stack-overflow.png',
 					site: 'https://stackoverflow.com',
 				},
 				{
@@ -78,7 +78,7 @@ export const default_sites: { key: string; sites: { image: string; site: string 
 					site: 'https://w3schools.com',
 				},
 				{
-					image: 'stack.png',
+					image: 'stack-overflow.png',
 					site: 'https://stackoverflow.com',
 				},
 				{
@@ -99,7 +99,7 @@ export const default_sites: { key: string; sites: { image: string; site: string 
 			key: 'Python',
 			sites: [
 				{
-					image: 'stack.png',
+					image: 'stack-overflow.png',
 					site: 'https://stackoverflow.com',
 				},
 				{
@@ -124,7 +124,7 @@ export const default_sites: { key: string; sites: { image: string; site: string 
 			key: 'C',
 			sites: [
 				{
-					image: 'stack.png',
+					image: 'stack-overflow.png',
 					site: 'https://stackoverflow.com',
 				},
 				{
@@ -149,7 +149,7 @@ export const default_sites: { key: string; sites: { image: string; site: string 
 			key: 'PHP',
 			sites: [
 				{
-					image: 'stack.png',
+					image: 'stack-overflow.png',
 					site: 'https://stackoverflow.com',
 				},
 				{
