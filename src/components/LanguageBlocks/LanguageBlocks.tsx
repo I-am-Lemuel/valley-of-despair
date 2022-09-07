@@ -32,16 +32,18 @@ export const LanguageBlocks: FunctionComponent<IProps> = (props) => {
 	];
 	return (
 		<StyledLanguageBlocks>
-			{cards.map((card) => {
+			{cards.map((card, key) => {
 				return (
-					<StyledCard>
-						<Link href={`/code/${card.name}`}>
-							<Image
-								src={`/${card.icon}`}
-								alt={card.name}
-								width={100}
-								height={100}
-							/>
+					<StyledCard key={key}>
+						<Link href={`/code/${card.name}`} passHref>
+							<a>
+								<Image
+									src={`/${card.icon}`}
+									alt={card.name}
+									width={100}
+									height={100}
+								/>
+							</a>
 						</Link>
 					</StyledCard>
 				);

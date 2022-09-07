@@ -25,7 +25,7 @@ export const StyledSearch = styled.div`
 	input {
 		font-size: 20px;
 		padding-left: 12px;
-		/* height: 40px; */
+		height: 40px;
 		width: 500px;
 		padding-right: 20px;
 		border: 2px solid #2196f3;
