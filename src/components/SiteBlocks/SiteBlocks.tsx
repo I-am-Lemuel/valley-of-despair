@@ -27,6 +27,9 @@ export const SiteBlocks: FunctionComponent<IProps> = (props) => {
 								selectedSites.selected_sites.includes(site.site)
 							}>
 									<Image src={`/${site.image}`} alt={site.site} width={100} height={100} />
+									<div>
+										<p>fa waka</p>
+										</div>
 							</StyledSiteBtn>
 ))}
 		</StyledSiteBlocks>
