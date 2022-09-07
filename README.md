@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to valley-of-despair 👋</h1>
 <div align="left" style="display:flex; flex-direction:row;">
-<img src="https://img.shields.io/static/v1?label=Pre-Alpha&message=v0.0.1&color=blueviolet" alt="prealpha">
+<img src="https://img.shields.io/static/v1?label=Pre-Alpha&message=v0.1.0&color=blueviolet" alt="prealpha">
 </div>
 <br>
 > Valley of Dispair is een handige startpage om jouw programmeer ervaring beter te maken!
