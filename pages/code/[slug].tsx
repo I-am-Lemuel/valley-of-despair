@@ -36,29 +36,35 @@ export async function getServerSideProps(context: any) {
 			key: 'css',
 			sites: [
 				{
-					image: 'w3.png',
+					image: 'css-tricks.png',
 					site: 'https://css-tricks.com',
 				},
 				{
-					image: 'w3.png',
+					image: 'mozilla.png',
 					site: 'https://developer.mozilla.org',
 				},
 				{
+					image: 'w3.png',
 					site: 'https://www.w3schools.com',
 				},
 				{
+					image: 'css-ref.png',
 					site: 'https://cssreference.io',
 				},
 				{
+					image: 'stack-overflow.png',
 					site: 'https://stackoverflow.com',
 				},
 				{
+					image: 'reddit.png',
 					site: 'https://www.reddit.com',
 				},
 				{
+					image: 'github.png',
 					site: 'https://github.com',
 				},
 				{
+					image: 'quora.png',
 					site: 'https://www.quora.com',
 				},
 			],
