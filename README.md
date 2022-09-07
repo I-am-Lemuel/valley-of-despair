@@ -4,7 +4,7 @@
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-https://img.shields.io/static/v1?label=Pre-Alpha&message=v0.0.1&color=blueviolet
+<img src="https://img.shields.io/static/v1?label=Pre-Alpha&message=v0.0.1&color=blueviolet" alt="prealpha">
 </div>
 
 > Valley of Dispair is een handige startpage om jouw programmeer ervaring beter te maken!
