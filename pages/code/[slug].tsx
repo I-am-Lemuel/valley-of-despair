@@ -3,7 +3,7 @@ import Layout from '../../src/components/Layout';
 import { Search } from '../../src/components/Search/Search';
 interface Props {
 	slug: string;
-	default_sites: { key: string; sites: { image: string; site: string }[] }[];
+	default_sites: { image: string; site: string }[];
 }
 const CodePage: NextPage<Props> = (props) => {
 	const { slug, default_sites } = props;
@@ -69,7 +69,26 @@ export async function getServerSideProps(context: any) {
 		},
 	];
 
-	return { props: { slug, default_sites } };
+	const sites = default_sites.map((object, index) => {
+		if (object.key === slug) {
+			return {
+				slug: slug,
+				default_sites: default_sites[index],
+			};
+		} else {
+			return {
+				slug: slug,
+				default_sites: [],
+			};
+		}
+	});
+
+	return {
+		props: {
+			slug: slug,
+			default_sites: JSON.stringify(sites),
+		},
+	};
 }
 
 export default CodePage;
