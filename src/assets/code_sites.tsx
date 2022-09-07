@@ -20,7 +20,7 @@ export const default_sites: { key: string; sites: { image: string; site: string 
 					site: 'https://cssreference.io',
 				},
 				{
-					image: 'stack-overflow.png',
+					image: 'stack.png',
 					site: 'https://stackoverflow.com',
 				},
 				{
@@ -45,11 +45,11 @@ export const default_sites: { key: string; sites: { image: string; site: string 
 					site: 'https://developer.mozilla.org',
 				},
 				{
-					image: 'W3schools.png',
+					image: 'w3.png',
 					site: 'https://w3schools.com',
 				},
 				{
-					image: 'stack-overflow.png',
+					image: 'stack.png',
 					site: 'https://stackoverflow.com',
 				},
 				{
@@ -67,18 +67,18 @@ export const default_sites: { key: string; sites: { image: string; site: string 
 			],
 		},
 		{
-			key: 'HTML',
+			key: 'html',
 			sites: [
 				{
 					image: 'mozilla.png',
 					site: 'https://developer.mozilla.org',
 				},
 				{
-					image: 'W3schools.png',
+					image: 'w3.png',
 					site: 'https://w3schools.com',
 				},
 				{
-					image: 'stack-overflow.png',
+					image: 'stack.png',
 					site: 'https://stackoverflow.com',
 				},
 				{
@@ -96,10 +96,10 @@ export const default_sites: { key: string; sites: { image: string; site: string 
 			],
 		},
 		{
-			key: 'Python',
+			key: 'python',
 			sites: [
 				{
-					image: 'stack-overflow.png',
+					image: 'stack.png',
 					site: 'https://stackoverflow.com',
 				},
 				{
@@ -115,16 +115,16 @@ export const default_sites: { key: string; sites: { image: string; site: string 
 					site: 'https://quora.com',
 				},
 				{
-					image: 'docs.png',
+					image: 'python-docs.png',
 					site: 'https://docs.python.org',
 				},
 			],
 		},
 		{
-			key: 'C',
+			key: 'c',
 			sites: [
 				{
-					image: 'stack-overflow.png',
+					image: 'stack.png',
 					site: 'https://stackoverflow.com',
 				},
 				{
@@ -146,10 +146,10 @@ export const default_sites: { key: string; sites: { image: string; site: string 
 			],
 		},
 		{
-			key: 'PHP',
+			key: 'php',
 			sites: [
 				{
-					image: 'stack-overflow.png',
+					image: 'stack.png',
 					site: 'https://stackoverflow.com',
 				},
 				{
