@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import Image from 'next/future/image';
 import { useEffect, useState } from 'react';
-import { default_sites } from '../../src/assets/code_sites';
+import { code_sites } from '../../src/assets/code_sites';
 import Layout from '../../src/components/Layout';
 import { Search } from '../../src/components/Search/Search';
 interface Props {
@@ -54,7 +54,7 @@ export async function getServerSideProps(context: any) {
 	const { slug } = context.params;
 
 	const stringified_sites = JSON.stringify(
-		default_sites.filter((site) => site.key === slug)[0].sites,
+		code_sites.filter((site) => site.key === slug)[0].sites,
 	);
 
 	return {
