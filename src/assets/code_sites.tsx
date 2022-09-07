@@ -43,26 +43,32 @@ export const code_sites: {
 		key: 'js',
 		sites: [
 			{
+				title: 'mozilla',
 				image: 'mozilla.png',
 				site: 'https://developer.mozilla.org',
 			},
 			{
+				title: 'w3schools',
 				image: 'w3.png',
 				site: 'https://w3schools.com',
 			},
 			{
+				title: 'stackoverflow',
 				image: 'stack.png',
 				site: 'https://stackoverflow.com',
 			},
 			{
+				title: 'reddit',
 				image: 'reddit.png',
 				site: 'https://reddit.com',
 			},
 			{
+				title: 'github',
 				image: 'github.png',
 				site: 'https://github.com',
 			},
 			{
+				title: 'quora',
 				image: 'quora.png',
 				site: 'https://quora.com',
 			},
