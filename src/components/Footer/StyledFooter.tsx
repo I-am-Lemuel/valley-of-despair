@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const footerHeight = '300px';
 export const StyledFooter = styled.div`
-	padding: 80px 60px;
+	padding: 80px 0 80px 0;
 	background: black;
 	bottom: 0;
 	width: 100%;
