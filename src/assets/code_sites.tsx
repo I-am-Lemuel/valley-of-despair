@@ -45,7 +45,7 @@ export const default_sites: { key: string; sites: { image: string; site: string 
 					site: 'https://developer.mozilla.org',
 				},
 				{
-					image: 'W3schools.png',
+					image: 'w3.png',
 					site: 'https://w3schools.com',
 				},
 				{
@@ -74,7 +74,7 @@ export const default_sites: { key: string; sites: { image: string; site: string 
 					site: 'https://developer.mozilla.org',
 				},
 				{
-					image: 'W3schools.png',
+					image: 'w3.png',
 					site: 'https://w3schools.com',
 				},
 				{
