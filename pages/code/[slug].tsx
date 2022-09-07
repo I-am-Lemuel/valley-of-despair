@@ -1,19 +1,34 @@
 import { NextPage } from 'next';
+import Image from 'next/future/image';
+import Link from 'next/link';
 import Layout from '../../src/components/Layout';
 import { Search } from '../../src/components/Search/Search';
 interface Props {
 	slug: string;
-	default_sites: { image: string; site: string }[];
+	stringified_sites: string;
 }
 const CodePage: NextPage<Props> = (props) => {
-	const { slug, default_sites } = props;
+	const { slug, stringified_sites } = props;
+	const default_sites: { image: string; site: string }[] =
+		JSON.parse(stringified_sites);
 	const site_params = `\"${slug}\"`;
+
 	console.log(default_sites);
 	return (
 		<Layout title={`PHP - ${slug}`}>
 			<Search placeholder={`Search in ${slug}`} site_params={site_params} />
 			<h1>Slug: {slug}</h1>
 			<h1>Key params: {site_params}</h1>
+			{default_sites.map((site, index) => (
+				<div key={index}>
+					<Image
+						src={`/${site.image}`}
+						alt={site.site}
+						width={400}
+						height={170}
+					/>
+				</div>
+			))}
 		</Layout>
 	);
 };
@@ -75,18 +90,13 @@ export async function getServerSideProps(context: any) {
 				slug: slug,
 				default_sites: default_sites[index],
 			};
-		} else {
-			return {
-				slug: slug,
-				default_sites: [],
-			};
 		}
 	});
 
 	return {
 		props: {
 			slug: slug,
-			default_sites: JSON.stringify(sites),
+			stringified_sites: JSON.stringify(sites[0]?.default_sites.sites),
 		},
 	};
 }
