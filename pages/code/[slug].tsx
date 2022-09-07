@@ -56,7 +56,7 @@ export async function getServerSideProps(context: any) {
 					site: 'https://cssreference.io',
 				},
 				{
-					image: 'stack-overflow.png',
+					image: 'stack.png',
 					site: 'https://stackoverflow.com',
 				},
 				{
