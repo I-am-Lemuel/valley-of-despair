@@ -7,9 +7,7 @@ const Header: FunctionComponent<Props> = (props: any) => {
 	return (
 		<StyledHeader>
 			<StyledText>
-				<div>
-					<h1>Valley of Despair</h1>
-				</div>
+				<p>Valley of Despair</p>
 			</StyledText>
 		</StyledHeader>
 	);
