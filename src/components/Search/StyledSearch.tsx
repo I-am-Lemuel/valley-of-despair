@@ -8,14 +8,15 @@ export const StyledSearch = styled.div`
 	align-items: center;
 
 	button {
-		width: 38px;
+		width: 40px;
 		height: 42px;
 		background-color: transparent;
 		color: ${(props) => props.theme.colors.primary};
 		font-size: 15px;
 		border-radius: 0px;
 		cursor: pointer;
-		border: unset;
+		border: none;
+		transition: 0.7s;
 	}
 	div {
 		display: flex;
@@ -29,7 +30,6 @@ export const StyledSearch = styled.div`
 		width: 500px;
 		padding-right: 20px;
 		border: 2px solid #2196f3;
-
 		border-radius: 0px;
 		outline: none;
 		border: none;
@@ -43,8 +43,9 @@ export const StyledSearch = styled.div`
 		outline: none;
 	}
 	button:hover {
-		transition: all 0.5s;
-		box-shadow: 0px 0px 4px 1px #2196f3;
+		transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+		-ms-transform: scale(1.5);
 		outline: none;
 	}
 `;
