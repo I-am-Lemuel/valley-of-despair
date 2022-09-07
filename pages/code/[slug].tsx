@@ -4,7 +4,7 @@ import { Search } from '../../src/components/Search/Search';
 
 interface Props {
 	slug: string;
-	default_sites: { key: string; sites: {} }[];
+	default_sites: { key: string; sites: { image: string; site: string }[] }[];
 }
 const CodePage: NextPage<Props> = (props) => {
 	const { slug, default_sites } = props;
@@ -31,7 +31,7 @@ const CodePage: NextPage<Props> = (props) => {
 
 export async function getServerSideProps(context: any) {
 	const { slug } = context.params;
-	let default_sites: { key: string; sites: {} }[] = [
+	let default_sites: { key: string; sites: { image: string; site: string }[] }[] = [
 		{
 			key: 'css',
 			sites: [
