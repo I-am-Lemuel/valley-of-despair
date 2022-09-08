@@ -19,7 +19,7 @@ export const Search: FunctionComponent<IProps> = (props) => {
   const onSearch = (e: any) => {
     e.preventDefault();
     const query =
-      search +
+      search.replace("#", "") +
       (key_params ? ` ${key_params}` : "") +
       (selectedSites
         ? ` site:${selectedSites.selected_sites.join(" | ")}`
