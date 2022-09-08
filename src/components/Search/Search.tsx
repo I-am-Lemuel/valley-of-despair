@@ -1,7 +1,7 @@
 import Image from 'next/future/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { FunctionComponent, useState } from 'react';
+import { FunctionComponent, useEffect, useState } from 'react';
 import { StyledBar, StyledLogo, StyledSearch } from './StyledSearch';
 interface IProps {
 	placeholder?: string;
@@ -24,6 +24,10 @@ export const Search: FunctionComponent<IProps> = (props) => {
 			(selectedSites ? ` site:${selectedSites.selected_sites.join(' | ')}` : '');
 		router.push(`https://www.google.com/search?q=${query}`);
 	};
+	useEffect(() => {
+		const input = document.querySelector('input');
+		input!.focus();
+	}, []);
 	return (
 		<StyledSearch>
 			<StyledLogo>
