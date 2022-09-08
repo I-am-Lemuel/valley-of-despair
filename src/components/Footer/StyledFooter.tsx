@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const footerHeight = '300px';
 export const StyledFooter = styled.div`
+	margin-top: 200px;
 	padding: 80px 0 80px 0;
 	background: #212121;
 	bottom: 0;
@@ -19,7 +20,6 @@ export const StyledContainer = styled.div`
 	justify-content: center;
 	max-width: 1000px;
 	margin: 0 auto;
-	/* background: red; */
 `;
 
 export const StyledColumn = styled.div`
