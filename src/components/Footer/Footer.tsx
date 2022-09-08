@@ -1,12 +1,12 @@
-import Link from 'next/link';
+import Link from "next/link";
 import {
-	StyledColumn,
-	StyledContainer,
-	StyledFooter,
-	StyledFooterLink,
-	StyledHeading,
-	StyledRow,
-} from './StyledFooter';
+  StyledColumn,
+  StyledContainer,
+  StyledFooter,
+  StyledFooterLink,
+  StyledHeading,
+  StyledRow,
+} from "./StyledFooter";
 
 export default function Footer() {
 	return (
