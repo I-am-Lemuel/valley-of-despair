@@ -1,3 +1,5 @@
+import { ThemeProvider } from 'styled-components';
+
 export const Theme = ({ children }: any) => {
 	const theme = {
 		colors: {
