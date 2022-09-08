@@ -19,7 +19,8 @@ export const StyledSiteBtn = styled.div<{ selected: boolean }>`
 	:hover {
 		transition: 0.4s;
 		border-radius: 15px;
-		background-color: ${({ theme }) => theme.colors.accent};
+		background-color: ${({ theme }) => theme.colors.secondary};
+		opacity: 0.8;
 		transform: scale(1.2);
 		-webkit-transform: scale(1.2);
 		-ms-transform: scale(1.2);
