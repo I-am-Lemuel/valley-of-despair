@@ -37,7 +37,7 @@ export default function Footer() {
 					<StyledColumn>
 						<StyledHeading>Location</StyledHeading>
 						<Link href='https://maps.app.goo.gl/pK46MLTE14155Yy77' passHref>
-							<StyledFooterLink>Our headquarter</StyledFooterLink>
+							<StyledFooterLink>Our headquarters</StyledFooterLink>
 						</Link>
 					</StyledColumn>
 					<StyledColumn>

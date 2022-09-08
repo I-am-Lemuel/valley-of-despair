@@ -2,8 +2,7 @@ import Image from 'next/future/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FunctionComponent, useState } from 'react';
-import { BsSearch } from 'react-icons/bs';
-import { StyledLogo, StyledSearch } from './StyledSearch';
+import { StyledBar, StyledLogo, StyledSearch } from './StyledSearch';
 interface IProps {
 	placeholder?: string;
 	key_params?: string;
@@ -34,10 +33,10 @@ export const Search: FunctionComponent<IProps> = (props) => {
 					</a>
 				</Link>
 			</StyledLogo>
-			<div>
-				<button onClick={(e) => onSearch(e)}>
+			<StyledBar>
+				{/* <button onClick={(e) => onSearch(e)}>
 					<BsSearch />
-				</button>
+				</button> */}
 				<input
 					type='text'
 					placeholder={placeholder ? placeholder : 'Search'}
@@ -48,7 +47,7 @@ export const Search: FunctionComponent<IProps> = (props) => {
 							onSearch(e);
 						}
 					}}></input>
-			</div>
+			</StyledBar>
 		</StyledSearch>
 	);
 };
