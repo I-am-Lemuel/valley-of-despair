@@ -38,10 +38,9 @@ export const StyledRepo = styled.div`
   justify-content: flex-end;
   width: 100%;
 
-  text-decoration: underline;
-
   p {
     color: black;
+	text-decoration: underline;
     cursor: pointer;
   }
 `;
