@@ -33,15 +33,15 @@ export const StyledText = styled.div`
 `;
 
 export const StyledRepo = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
 
-	text-decoration: underline;
-	
-	p {
-		color: black;
-		cursor: pointer;
-	}
+  text-decoration: underline;
+
+  p {
+    color: black;
+    cursor: pointer;
+  }
 `;
