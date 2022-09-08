@@ -10,7 +10,7 @@ export const StyledSiteBlocks = styled.div`
 `;
 export const StyledSiteBtn = styled.div<{ selected: boolean }>`
     transition: 0.4s;
-    margin: 1.5rem;
+    margin: 2.5rem;
 ${({ selected }) =>
     selected
         && `
