@@ -64,13 +64,6 @@ export default function Footer() {
 								<span>LinkedIn</span>
 							</StyledFooterLink>
 						</Link>
-						<Link
-							href='https://github.com/I-am-Lemuel/valley-of-despair'
-							passHref>
-							<StyledFooterLink>
-								<span>Github repository</span>
-							</StyledFooterLink>
-						</Link>
 					</StyledColumn>
 				</StyledRow>
 			</StyledContainer>

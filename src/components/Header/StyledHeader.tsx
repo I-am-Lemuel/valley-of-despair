@@ -31,3 +31,17 @@ export const StyledText = styled.div`
 	font-style: italic;
 	margin-left: 10px;
 `;
+
+export const StyledRepo = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+
+	text-decoration: underline;
+	
+	p {
+		color: black;
+		cursor: pointer;
+	}
+`;
