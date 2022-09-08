@@ -22,7 +22,7 @@ export const Search: FunctionComponent<IProps> = (props) => {
 		const query =
 			search +
 			(key_params ? ` ${key_params}` : '') +
-			(selectedSites ? ` site:${selectedSites.selected_sites.join(' OR ')}` : '');
+			(selectedSites ? ` site:${selectedSites.selected_sites.join(' | ')}` : '');
 		router.push(`https://www.google.com/search?q=${query}`);
 	};
 	return (
