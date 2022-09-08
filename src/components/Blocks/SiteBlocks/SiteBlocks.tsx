@@ -37,8 +37,8 @@ export const SiteBlocks: FunctionComponent<IProps> = (props) => {
             <Image
               src={`/${site.image}`}
               alt={site.site}
-              width={100}
-              height={100}
+              width={65}
+              height={65}
             />
           </StyledSiteBtn>
         ))}
