@@ -19,39 +19,57 @@ export default function Footer() {
 					<StyledColumn>
 						<StyledHeading>Github profiles:</StyledHeading>
 						<Link href='https://github.com/Skullsko' passHref>
-							<StyledFooterLink>Niek Goedemans</StyledFooterLink>
+							<StyledFooterLink>
+								<span>Niek Goedemans</span>
+							</StyledFooterLink>
 						</Link>
 						<Link href='https://github.com/I-am-Lemuel' passHref>
-							<StyledFooterLink>Lemuel Bakker</StyledFooterLink>
+							<StyledFooterLink>
+								<span>Lemuel Bakker</span>
+							</StyledFooterLink>
 						</Link>
 						<Link href='https://github.com/brentgotte' passHref>
-							<StyledFooterLink>Brent Götte</StyledFooterLink>
+							<StyledFooterLink>
+								<span>Brent Götte</span>
+							</StyledFooterLink>
 						</Link>
 						<Link href='https://github.com/Xaohs' passHref>
-							<StyledFooterLink>Julian Roeland</StyledFooterLink>
+							<StyledFooterLink>
+								<span>Julian Roeland</span>
+							</StyledFooterLink>
 						</Link>
 						<Link href='https://github.com/Ssionn' passHref>
-							<StyledFooterLink>Casper Kizewski</StyledFooterLink>
+							<StyledFooterLink>
+								<span>Casper Kizewski</span>
+							</StyledFooterLink>
 						</Link>
 					</StyledColumn>
 					<StyledColumn>
 						<StyledHeading>Location</StyledHeading>
 						<Link href='https://maps.app.goo.gl/pK46MLTE14155Yy77' passHref>
-							<StyledFooterLink>Our headquarters</StyledFooterLink>
+							<StyledFooterLink>
+								<span>Our headquarters</span>
+							</StyledFooterLink>
 						</Link>
 					</StyledColumn>
 					<StyledColumn>
 						<StyledHeading>Contact Us</StyledHeading>
 						<Link href='mailto:PHP@support.com?subject=Feedback' passHref>
-							<StyledFooterLink href=''>Email</StyledFooterLink>
+							<StyledFooterLink href=''>
+								<span>Email</span>
+							</StyledFooterLink>
 						</Link>
 						<Link href='https://nl.linkedin.com/' passHref>
-							<StyledFooterLink>LinkedIn</StyledFooterLink>
+							<StyledFooterLink>
+								<span>LinkedIn</span>
+							</StyledFooterLink>
 						</Link>
 						<Link
 							href='https://github.com/I-am-Lemuel/valley-of-despair'
 							passHref>
-							<StyledFooterLink>Github repository</StyledFooterLink>
+							<StyledFooterLink>
+								<span>Github repository</span>
+							</StyledFooterLink>
 						</Link>
 					</StyledColumn>
 				</StyledRow>

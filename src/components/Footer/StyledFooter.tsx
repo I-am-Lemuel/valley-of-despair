@@ -41,12 +41,14 @@ export const StyledRow = styled.div`
 
 export const StyledFooterLink = styled.a`
 	color: #fff;
+	span {
+		text-decoration: underline;
+	}
 	margin-bottom: 20px;
-	font-size: 18px;
-	text-decoration: none;
+	font-size: ${({ theme }) => theme.fontSizes.small};
 
 	&:hover {
-		color: #d8735a;
+		color: ${({ theme }) => theme.colors.secondary};
 		transition: 200ms ease-in;
 	}
 `;
