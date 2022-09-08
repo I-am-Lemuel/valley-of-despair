@@ -1,60 +1,63 @@
-import { NextPage } from 'next';
-import { useState } from 'react';
-import { code_sites } from '../../src/assets/code_sites';
-import DocumentetionBlocks from '../../src/components/DocumentationBlocks/DocumentetionBlocks';
-import Layout from '../../src/components/Layout';
-import { Search } from '../../src/components/Search/Search';
-import { SiteBlocks } from '../../src/components/SiteBlocks/SiteBlocks';
+import { NextPage } from "next";
+import { useState } from "react";
+import { code_sites } from "../../src/assets/code_sites";
+import DocumentetionBlocks from "../../src/components/DocumentationBlocks/DocumentetionBlocks";
+import Layout from "../../src/components/Layout";
+import { Search } from "../../src/components/Search/Search";
+import { SiteBlocks } from "../../src/components/SiteBlocks/SiteBlocks";
 interface Props {
-	slug: string;
-	stringified_sites: string;
+  slug: string;
+  stringified_sites: string;
 }
 const CodePage: NextPage<Props> = (props) => {
-	const { slug, stringified_sites } = props;
-	const all_sites: { image: string; site: string; title: string }[] =
-		JSON.parse(stringified_sites);
-	const site_params = `\"${slug}\"`;
+  const { slug, stringified_sites } = props;
+  const all_sites: { image: string; site: string; title: string }[] =
+    JSON.parse(stringified_sites);
+  const site_params = `\"${slug}\"`;
 
-	const [selectedSites, setSelectedSites] = useState<{ selected_sites: string[] }>({
-		selected_sites: ['https://stackoverflow.com'],
-	});
-	return (
-		<Layout title={`PHP - ${slug}`}>
-			<Search
-				placeholder={`Search in ${slug}`}
-				key_params={site_params}
-				selectedSites={selectedSites}
-			/>
-			<div className="flexy">
-			<SiteBlocks
-				all_sites={all_sites}
-				selectedSites={selectedSites}
-				setSelectedSites={setSelectedSites}
-				/>
-			<DocumentetionBlocks />
-			</div>
-			<style>{`
-				.flexy {
+  const [selectedSites, setSelectedSites] = useState<{
+    selected_sites: string[];
+  }>({
+    selected_sites: ["https://stackoverflow.com"],
+  });
+  return (
+    <Layout title={`PHP - ${slug}`}>
+      <Search
+        placeholder={`Search in ${slug}`}
+        key_params={site_params}
+        selectedSites={selectedSites}
+      />
+      <div className="DocumentetionBlocksContainer">
+        <SiteBlocks
+          all_sites={all_sites}
+          selectedSites={selectedSites}
+          setSelectedSites={setSelectedSites}
+        />
+        <DocumentetionBlocks />
+      </div>
+      <style>{`
+				.DocumentetionBlocksContainer {
 				display: flex;
+				flex-direction: column;
 				}
 			`}</style>
-		</Layout>
-	);
+    </Layout>
+  );
 };
 
 export async function getServerSideProps(context: any) {
-	const { slug } = context.params;
+  const { slug } = context.params;
 
-	const stringified_sites = JSON.stringify(
-		code_sites.filter((site) => site.key === slug)[0].sites,
-	);
+  const stringified_sites = JSON.stringify(
+    code_sites.filter((site) => site.key === slug)[0].sites
+  );
 
-	return {
-		props: {
-			slug: slug,
-			stringified_sites: stringified_sites,
-		},
-	};
+  return {
+    props: {
+      slug: slug,
+      stringified_sites: stringified_sites,
+    },
+  };
 }
 
 export default CodePage;

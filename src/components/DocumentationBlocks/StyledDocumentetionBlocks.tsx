@@ -1,6 +1,3 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-
-
-export const StyledDocumentetionBlocks = styled.div`
-`;
+export const StyledDocumentetionBlocks = styled.div``;
