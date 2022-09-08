@@ -250,4 +250,41 @@ export const code_sites: {
 			site: 'https://www.php.net/manual/en/intro-whatis.php',
 		},
 	},
+	{
+		key: 'mysql',
+		sites: [
+			{
+				default: true,
+				image: 'stack.png',
+				site: 'https://stackoverflow.com',
+				title: 'Stack Overflow',
+			},
+			{
+				image: 'reddit.png',
+				site: 'https://reddit.com',
+				title: 'Reddit',
+			},
+			{
+				image: 'github.png',
+				site: 'https://github.com',
+				title: 'Github',
+			},
+			{
+				image: 'quora.png',
+				site: 'https://quora.com',
+				title: 'Quora',
+			},
+			{
+				default: true,
+				image: 'mysql.png',
+				site: 'https://dev.mysql.com',
+				title: 'MySQL',
+			},
+		],
+		documentation_site: {
+			title: '',
+			image: '',
+			site: 'https://www.php.net/manual/en/intro-whatis.php',
+		},
+	},
 ];

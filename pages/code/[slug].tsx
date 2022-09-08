@@ -11,7 +11,7 @@ interface Props {
 }
 const CodePage: NextPage<Props> = (props) => {
 	const { slug, stringified_sites, stringified_documentation_site } = props;
-	const all_sites: { image: string; site: string; title: string }[] =
+	const all_sites: { image: string; site: string; title: string; default?: boolean }[] =
 		JSON.parse(stringified_sites);
 	const documentation_site: { image: string; site: string; title: string } = JSON.parse(
 		stringified_documentation_site,
@@ -21,7 +21,7 @@ const CodePage: NextPage<Props> = (props) => {
 	const [selectedSites, setSelectedSites] = useState<{
 		selected_sites: string[];
 	}>({
-		selected_sites: ['https://stackoverflow.com'],
+		selected_sites: all_sites.filter((site) => site.default).map((site) => site.site),
 	});
 	return (
 		<Layout title={`PHP - ${slug}`}>
