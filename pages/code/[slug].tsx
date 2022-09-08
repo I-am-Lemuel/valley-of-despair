@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import { useState } from 'react';
 import { code_sites } from '../../src/assets/code_sites';
+import DocumentetionBlocks from '../../src/components/DocumentationBlocks/DocumentetionBlocks';
 import Layout from '../../src/components/Layout';
 import { Search } from '../../src/components/Search/Search';
 import { SiteBlocks } from '../../src/components/SiteBlocks/SiteBlocks';
@@ -24,11 +25,19 @@ const CodePage: NextPage<Props> = (props) => {
 				key_params={site_params}
 				selectedSites={selectedSites}
 			/>
+			<div className="flexy">
 			<SiteBlocks
 				all_sites={all_sites}
 				selectedSites={selectedSites}
 				setSelectedSites={setSelectedSites}
-			/>
+				/>
+			<DocumentetionBlocks />
+			</div>
+			<style>{`
+				.flexy {
+				display: flex;
+				}
+			`}</style>
 		</Layout>
 	);
 };
